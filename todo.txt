@@ -1,0 +1,1 @@
+mongoimport --host cosmosdb-hol.documents.azure.com -u cosmosdb-hol -p V2xIAbFK2xPBOKXf0DqwnjNZnxnrc3CTCjnRNqzuRDnBdzINIXtoM6n8Wmum6EnNRscRKvSbtAtcPA2qtLLHCQ== --db best-for-you-organics --collection plans --ssl --sslAllowInvalidCertificates --type json --file ~/MongoExport/plans.json

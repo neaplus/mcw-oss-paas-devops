@@ -8,6 +8,7 @@ var Plan = require('../models/Plan');
 var User = require('../models/User');
 
 var databaseUrl = 'mongodb://localhost:27017/best-for-you-organics';
+databaseUrl = 'mongodb://cosmosdb-hol:V2xIAbFK2xPBOKXf0DqwnjNZnxnrc3CTCjnRNqzuRDnBdzINIXtoM6n8Wmum6EnNRscRKvSbtAtcPA2qtLLHCQ==@cosmosdb-hol.documents.azure.com:10255/best-for-you-organics?ssl=true&replicaSet=globaldb';
 
 var twoPersonPlanId = new ObjectId();
 var fourPersonPlanId = new ObjectId();
@@ -16,7 +17,7 @@ var highProPlanId = new ObjectId();
 async.series([
     function (callback) {
         MongoClient.connect(databaseUrl, function (err, db) {
-
+m
             if (err) throw err;
             db.dropDatabase(function (err, result) {
                 db.close(true, function (err, result) {
